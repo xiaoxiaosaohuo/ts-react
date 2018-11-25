@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReactSFC render test App snapshot 1`] = `
+<div
+  className="container"
+>
+  <h1>
+    welcome use jest
+  </h1>
+  <Button />
+  <Title
+    address="台湾选举"
+    hide={false}
+  />
+  jinxin
+  <span>
+    第一个span
+  </span>
+  <span>
+    第二个span
+  </span>
+  <ul
+    className="ul-wrapper"
+  >
+    <li>
+      1
+    </li>
+    <li>
+      2
+    </li>
+    <li>
+      3
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`mount app match snapshot 1`] = `
+<ReactSFC
+  message="mount"
+>
+  <div
+    className="container"
+  >
+    <h1>
+      welcome use jest
+    </h1>
+    <Button>
+      <button
+        onClick={[Function]}
+      >
+        off
+      </button>
+      <input
+        onChange={[Function]}
+      />
+      <span
+        className="input-value"
+      />
+    </Button>
+    <Title
+      address="台湾选举"
+      hide={false}
+    >
+      <a
+        href="台湾选举"
+      >
+        台湾选举
+      </a>
+    </Title>
+    mount
+    <span>
+      第一个span
+    </span>
+    <span>
+      第二个span
+    </span>
+    <ul
+      className="ul-wrapper"
+    >
+      <li>
+        1
+      </li>
+      <li>
+        2
+      </li>
+      <li>
+        3
+      </li>
+    </ul>
+  </div>
+</ReactSFC>
+`;
