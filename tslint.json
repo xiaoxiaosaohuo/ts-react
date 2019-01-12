@@ -22,6 +22,12 @@
     "member-access": [
       false
     ],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "allow-pascal-case",
+      "allow-leading-underscore"
+    ],
     "max-classes-per-file": false
   }
 }
