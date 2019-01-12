@@ -33,7 +33,6 @@ exports[`<Form /> matches saved snapshot 1`] = `
     <input
       checked={true}
       data-testid="checked"
-      onChange={[Function]}
       onClick={[Function]}
       type="checkbox"
     />
