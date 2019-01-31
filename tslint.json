@@ -4,7 +4,8 @@
     "exclude": [
       "config/**/*.js",
       "node_modules/**/*.ts",
-      "coverage/lcov-report/*.js"
+      "coverage/lcov-report/*.js",
+      "src/**/*.test.tsx"
     ]
   },
   "rules": {
@@ -18,7 +19,7 @@
       true,
       "never-prefix"
     ],
-    "member-ordering": [true, {"alphabetize": true, "order": [
+    "member-ordering": [true, {"alphabetize": false, "order": [
       "constructor",
 			"private-static-field",
 			"protected-static-field",
@@ -33,6 +34,16 @@
 			"protected-instance-method",
 			"public-instance-method"
 		]}],
-    "no-console": false
+    "no-console": false,
+    "member-access": [
+      false
+    ],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "allow-pascal-case",
+      "allow-leading-underscore"
+    ],
+    "max-classes-per-file": false
   }
 }
