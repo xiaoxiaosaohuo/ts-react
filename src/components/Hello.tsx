@@ -1,5 +1,6 @@
 import * as React from 'react'
-
+import Button from '../tsdemo/state';
+import ButtonSFC from '../tsdemo/sfc';
 export interface Props {
     message:string
 }
@@ -17,16 +18,21 @@ class Hello extends React.Component<Props,State>{
         super(props);
         this.state = { count:1 };
     }
-    componentDidMount(){
+    private onClick = (e:React.MouseEvent)=>{
+        console.log(e.target)
+    }   
+    public componentDidMount(){
         // this.state.count=2;
         this.setState({
             count:2
         })
     }
+   
     public render(){
         return(
             <div>
-                Hello world
+                <Button>啊</Button>
+                <ButtonSFC handleClick={this.onClick}>adf</ButtonSFC>
             </div>
         )
     }
